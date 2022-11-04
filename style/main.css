@@ -108,11 +108,14 @@
   text-decoration: none;
   margin-right: 30px;
 }
+.navbar .navbar-menu .menu-icon {
+  display: none;
+}
 .navbar .navbar-baner-title {
   font-family: "Neutraface Display";
   font-style: normal;
   font-weight: 900;
-  font-size: 38.0443px;
+  font-size: 30px;
   line-height: 38px;
   text-transform: lowercase;
   color: #3c336c;
@@ -830,30 +833,58 @@
 }
 
 @media (max-width: 576px) {
-  main {
-    padding: 20px 15px;
-  }
-  nav ul {
+  .header {
     display: none !important;
   }
-  .menu--icon {
+  .navbar .navbar-list {
+    display: none !important;
+  }
+  .navbar .navbar-baner-title {
+    font-size: 25px !important;
+    padding-right: 20px;
+  }
+  .navbar .menu-icon {
     display: block !important;
+    padding-top: 20px;
+    padding-left: 20px;
+    cursor: pointer;
   }
-  .card--works {
-    margin-top: 3em;
-    flex-direction: column;
-    display: flex !important;
-    flex-wrap: wrap !important;
-    width: 350px !important;
+  .slide-naming {
+    width: 420px !important;
+    margin-top: -50px;
   }
-  .card--title {
-    font-size: 19px !important;
+  .slide-naming .slide-title {
+    color: white !important;
   }
-  .card--img {
-    width: 100% !important;
-    margin-right: 0 !important;
+  .slide-naming .slide-description {
+    width: 400px !important;
+    color: white !important;
   }
-  .card--img img {
-    width: 100%;
+  .slide-naming .slide-button p {
+    color: white !important;
+    font-size: 12px !important;
+  }
+  .information-list {
+    display: flex;
+    flex-direction: column !important;
+    align-items: center !important;
+    gap: 10px;
+  }
+  .footer-bar {
+    display: flex;
+    flex-direction: column !important;
+    align-items: center !important;
+    height: 100% !important;
+    gap: 20px;
+    padding-bottom: 40px;
+  }
+  .footer-bar .footer-left-side-contact, .footer-bar .footer-left-side-icons {
+    padding-left: 90px;
+  }
+  .footer-bar .categories-list {
+    font-size: 12px !important;
+  }
+  .footer-bar .footer-right-side {
+    padding-left: 60px !important;
   }
 }/*# sourceMappingURL=main.css.map */

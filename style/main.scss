@@ -116,14 +116,16 @@
             text-decoration: none;
             margin-right: 30px;
               }
-
+              .menu-icon{
+                display: none;
+              }
     }
 
     .navbar-baner-title {
         font-family: "Neutraface Display";
         font-style: normal;
         font-weight: 900;
-        font-size: 38.0443px;
+        font-size: 30px;
         line-height: 38px;
         text-transform: lowercase;
         color: #3c336c;
@@ -948,52 +950,70 @@ margin-bottom: 30px;
     }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
 // Small devices (landscape phones, 576px and up)
 @media (max-width: 576px) {
-    main {
-        padding: 20px 15px;
-    }
+.header{
+    display: none !important;
+}
 
-    nav ul {
+.navbar{
+    .navbar-list{
         display: none !important;
     }
-
-    .menu--icon {
-        display: block !important;
+    .navbar-baner-title{
+        font-size: 25px !important;
+        padding-right: 20px;
     }
-
-    .card--works {
-        margin-top: 3em;
-        flex-direction: column;
-        display: flex !important;
-        flex-wrap: wrap !important;
-        width: 350px !important;
-    }
-
-    .card--title {
-        font-size: 19px !important;
-    }
-
-    .card--img {
-        width: 100% !important;
-        margin-right: 0 !important;
-
-        img {
-            width: 100%;
+        .menu-icon {
+            display: block !important;
+            padding-top: 20px;
+            padding-left: 20px;
+            cursor: pointer;
         }
     }
+        .slide-naming{
+        width: 420px !important;
+        margin-top: -50px;
+        .slide-title{
+            color: white !important;
+        }
+       .slide-description{
+        width: 400px !important;
+        color: white !important;
+        }
+        .slide-button p{
+            color: white !important;
+            font-size: 12px !important;
+            
+        }
+    }
+.information-list{
+    display: flex;
+    flex-direction: column !important;
+    align-items: center !important;
+    gap: 10px;
+}
+
+
+.footer-bar{
+    display: flex;
+    flex-direction: column !important;
+    align-items: center !important;
+    height: 100%!important;
+    gap: 20px;
+    padding-bottom: 40px;
+.footer-left-side-contact, .footer-left-side-icons{
+padding-left: 90px;
+}
+.categories-list{
+    font-size: 12px!important;
+}
+.footer-right-side{
+   padding-left: 60px!important;
+}
+
+}
+
 }
 
 // Medium devices (tablets, 768px and up)
